@@ -27,6 +27,7 @@ steps:
   inputs:
     targets: 'test'
     enableCodeCoverage: false
+  continueOnError: true
 
 - task: gulp@1
   inputs:
