@@ -127,7 +127,7 @@
             "name": "backendAzureRmResourceGroupName",
             "type": "pickList",
             "label": "Resource group",
-            "required": false,
+            "required": true,
             "helpMarkDown": "The name of the resource group which contains the storage account selected below.",
             "groupName": "backendAzureRm",
             "properties": {
@@ -138,7 +138,7 @@
             "name": "backendAzureRmStorageAccountName",
             "type": "pickList",
             "label": "Storage account",
-            "required": false,
+            "required": true,
             "helpMarkDown": "The name of the storage account which contains the Azure Blob container selected below.",
             "groupName": "backendAzureRm",
             "properties": {
@@ -149,7 +149,7 @@
             "name": "backendAzureRmContainerName",
             "type": "pickList",
             "label": "Container",
-            "required": false,
+            "required": true,
             "helpMarkDown": "The name of the Azure Blob container in which to store the Terraform remote state file.",
             "groupName": "backendAzureRm",
             "properties": {
@@ -160,7 +160,7 @@
             "name": "backendAzureRmKey",
             "type": "string",
             "label": "Key",
-            "required": false,
+            "required": true,
             "helpMarkDown": "The path to the Terraform remote state file inside the container.<br>For example, if you want to store the state file, named terraform.tfstate, inside a folder, named tf, then give the input 'tf/terraform.tfstate'",
             "groupName": "backendAzureRm"
         },
